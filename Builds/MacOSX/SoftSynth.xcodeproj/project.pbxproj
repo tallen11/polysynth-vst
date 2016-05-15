@@ -46,20 +46,19 @@
 		7B80A67B3898B2898045BA54 /* juce_video.mm in Sources */ = {isa = PBXBuildFile; fileRef = C3365E2D3375F47B4FF7D567 /* juce_video.mm */; };
 		8396FE941B723B5195321AEB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3952F43D802579963302BD73 /* AudioToolbox.framework */; };
 		876392B5EEBAFF2BCDAD0356 /* juce_cryptography.mm in Sources */ = {isa = PBXBuildFile; fileRef = 07689B27C76604EB9F2AB440 /* juce_cryptography.mm */; };
-		A4458B561CE51EE10000690B /* Effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4458B361CE51EE10000690B /* Effect.cpp */; };
-		A4458B571CE51EE10000690B /* EffectBitcrusher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4458B381CE51EE10000690B /* EffectBitcrusher.cpp */; };
-		A4458B581CE51EE10000690B /* EffectDelay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4458B3A1CE51EE10000690B /* EffectDelay.cpp */; };
-		A4458B591CE51EE10000690B /* EffectOverdrive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4458B3C1CE51EE10000690B /* EffectOverdrive.cpp */; };
-		A4458B5A1CE51EE10000690B /* EffectsLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4458B3E1CE51EE10000690B /* EffectsLoop.cpp */; };
-		A4458B5B1CE51EE10000690B /* EnvelopeGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4458B401CE51EE10000690B /* EnvelopeGenerator.cpp */; };
-		A4458B5C1CE51EE10000690B /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4458B421CE51EE10000690B /* Filter.cpp */; };
-		A4458B5D1CE51EE10000690B /* LFO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4458B441CE51EE10000690B /* LFO.cpp */; };
-		A4458B601CE51EE10000690B /* Oscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4458B491CE51EE10000690B /* Oscillator.cpp */; };
-		A4458B611CE51EE10000690B /* Parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4458B4B1CE51EE10000690B /* Parameter.cpp */; };
-		A4458B621CE51EE10000690B /* README.md in Sources */ = {isa = PBXBuildFile; fileRef = A4458B4D1CE51EE10000690B /* README.md */; };
-		A4458B631CE51EE10000690B /* Synth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4458B4E1CE51EE10000690B /* Synth.cpp */; };
-		A4458B641CE51EE10000690B /* VolumeModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4458B511CE51EE10000690B /* VolumeModule.cpp */; };
-		A4458B651CE51EE10000690B /* WaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4458B541CE51EE10000690B /* WaveTable.cpp */; };
+		A4F0D6491CE825AD00EC622B /* Effect.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F0D62C1CE825AD00EC622B /* Effect.cpp */; };
+		A4F0D64A1CE825AD00EC622B /* EffectBitcrusher.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F0D62E1CE825AD00EC622B /* EffectBitcrusher.cpp */; };
+		A4F0D64B1CE825AD00EC622B /* EffectDelay.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F0D6301CE825AD00EC622B /* EffectDelay.cpp */; };
+		A4F0D64C1CE825AD00EC622B /* EffectOverdrive.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F0D6321CE825AD00EC622B /* EffectOverdrive.cpp */; };
+		A4F0D64D1CE825AD00EC622B /* EffectsLoop.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F0D6341CE825AD00EC622B /* EffectsLoop.cpp */; };
+		A4F0D64E1CE825AD00EC622B /* EnvelopeGenerator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F0D6361CE825AD00EC622B /* EnvelopeGenerator.cpp */; };
+		A4F0D64F1CE825AD00EC622B /* Filter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F0D6381CE825AD00EC622B /* Filter.cpp */; };
+		A4F0D6501CE825AD00EC622B /* LFO.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F0D63A1CE825AD00EC622B /* LFO.cpp */; };
+		A4F0D6511CE825AD00EC622B /* Oscillator.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F0D63D1CE825AD00EC622B /* Oscillator.cpp */; };
+		A4F0D6521CE825AD00EC622B /* Parameter.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F0D63F1CE825AD00EC622B /* Parameter.cpp */; };
+		A4F0D6531CE825AD00EC622B /* Synth.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F0D6411CE825AD00EC622B /* Synth.cpp */; };
+		A4F0D6541CE825AD00EC622B /* VolumeModule.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F0D6441CE825AD00EC622B /* VolumeModule.cpp */; };
+		A4F0D6551CE825AD00EC622B /* WaveTable.cpp in Sources */ = {isa = PBXBuildFile; fileRef = A4F0D6471CE825AD00EC622B /* WaveTable.cpp */; };
 		BA17C4D3641B2EA529D07A30 /* juce_audio_plugin_client_VST2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 73F985CE4BAA0DF0F8A1262F /* juce_audio_plugin_client_VST2.cpp */; };
 		C90CCE3CC4F4D6AEACD056A8 /* PluginProcessor.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F25887DDBC3BBFEF90FFD23C /* PluginProcessor.cpp */; };
 		C910CDA39DFAB79CD7F1FF15 /* juce_gui_extra.mm in Sources */ = {isa = PBXBuildFile; fileRef = DFEE659C658F3ECA284100F8 /* juce_gui_extra.mm */; };
@@ -857,37 +856,36 @@
 		A3E126F4AB3CA47AADE0A04C /* juce_PathIterator.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_PathIterator.h; path = ../../../../JUCE/modules/juce_graphics/geometry/juce_PathIterator.h; sourceTree = SOURCE_ROOT; };
 		A410364E9C06C8DB816A4440 /* juce_CharPointer_UTF16.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_CharPointer_UTF16.h; path = ../../../../JUCE/modules/juce_core/text/juce_CharPointer_UTF16.h; sourceTree = SOURCE_ROOT; };
 		A430FD884B8DE1D23973C3A6 /* juce_MouseCursor.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_MouseCursor.h; path = ../../../../JUCE/modules/juce_gui_basics/mouse/juce_MouseCursor.h; sourceTree = SOURCE_ROOT; };
-		A4458B341CE51EE10000690B /* Constants.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Constants.hpp; sourceTree = "<group>"; };
-		A4458B361CE51EE10000690B /* Effect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Effect.cpp; sourceTree = "<group>"; };
-		A4458B371CE51EE10000690B /* Effect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Effect.hpp; sourceTree = "<group>"; };
-		A4458B381CE51EE10000690B /* EffectBitcrusher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EffectBitcrusher.cpp; sourceTree = "<group>"; };
-		A4458B391CE51EE10000690B /* EffectBitcrusher.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EffectBitcrusher.hpp; sourceTree = "<group>"; };
-		A4458B3A1CE51EE10000690B /* EffectDelay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EffectDelay.cpp; sourceTree = "<group>"; };
-		A4458B3B1CE51EE10000690B /* EffectDelay.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EffectDelay.hpp; sourceTree = "<group>"; };
-		A4458B3C1CE51EE10000690B /* EffectOverdrive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EffectOverdrive.cpp; sourceTree = "<group>"; };
-		A4458B3D1CE51EE10000690B /* EffectOverdrive.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EffectOverdrive.hpp; sourceTree = "<group>"; };
-		A4458B3E1CE51EE10000690B /* EffectsLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EffectsLoop.cpp; sourceTree = "<group>"; };
-		A4458B3F1CE51EE10000690B /* EffectsLoop.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EffectsLoop.hpp; sourceTree = "<group>"; };
-		A4458B401CE51EE10000690B /* EnvelopeGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EnvelopeGenerator.cpp; sourceTree = "<group>"; };
-		A4458B411CE51EE10000690B /* EnvelopeGenerator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EnvelopeGenerator.hpp; sourceTree = "<group>"; };
-		A4458B421CE51EE10000690B /* Filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Filter.cpp; sourceTree = "<group>"; };
-		A4458B431CE51EE10000690B /* Filter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Filter.hpp; sourceTree = "<group>"; };
-		A4458B441CE51EE10000690B /* LFO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = LFO.cpp; sourceTree = "<group>"; };
-		A4458B451CE51EE10000690B /* LFO.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = LFO.hpp; sourceTree = "<group>"; };
-		A4458B481CE51EE10000690B /* Notes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Notes.hpp; sourceTree = "<group>"; };
-		A4458B491CE51EE10000690B /* Oscillator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Oscillator.cpp; sourceTree = "<group>"; };
-		A4458B4A1CE51EE10000690B /* Oscillator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Oscillator.hpp; sourceTree = "<group>"; };
-		A4458B4B1CE51EE10000690B /* Parameter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Parameter.cpp; sourceTree = "<group>"; };
-		A4458B4C1CE51EE10000690B /* Parameter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Parameter.hpp; sourceTree = "<group>"; };
-		A4458B4D1CE51EE10000690B /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		A4458B4E1CE51EE10000690B /* Synth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Synth.cpp; sourceTree = "<group>"; };
-		A4458B4F1CE51EE10000690B /* Synth.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Synth.hpp; sourceTree = "<group>"; };
-		A4458B501CE51EE10000690B /* Util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Util.hpp; sourceTree = "<group>"; };
-		A4458B511CE51EE10000690B /* VolumeModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = VolumeModule.cpp; sourceTree = "<group>"; };
-		A4458B521CE51EE10000690B /* VolumeModule.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = VolumeModule.hpp; sourceTree = "<group>"; };
-		A4458B541CE51EE10000690B /* WaveTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaveTable.cpp; sourceTree = "<group>"; };
-		A4458B551CE51EE10000690B /* WaveTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WaveTable.hpp; sourceTree = "<group>"; };
 		A480D3285DE3C3657CB75948 /* juce_RelativePoint.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = juce_RelativePoint.cpp; path = ../../../../JUCE/modules/juce_gui_basics/positioning/juce_RelativePoint.cpp; sourceTree = SOURCE_ROOT; };
+		A4F0D62A1CE825AD00EC622B /* Constants.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Constants.hpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/Constants.hpp; sourceTree = "<group>"; };
+		A4F0D62C1CE825AD00EC622B /* Effect.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Effect.cpp; sourceTree = "<group>"; };
+		A4F0D62D1CE825AD00EC622B /* Effect.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = Effect.hpp; sourceTree = "<group>"; };
+		A4F0D62E1CE825AD00EC622B /* EffectBitcrusher.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EffectBitcrusher.cpp; sourceTree = "<group>"; };
+		A4F0D62F1CE825AD00EC622B /* EffectBitcrusher.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EffectBitcrusher.hpp; sourceTree = "<group>"; };
+		A4F0D6301CE825AD00EC622B /* EffectDelay.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EffectDelay.cpp; sourceTree = "<group>"; };
+		A4F0D6311CE825AD00EC622B /* EffectDelay.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EffectDelay.hpp; sourceTree = "<group>"; };
+		A4F0D6321CE825AD00EC622B /* EffectOverdrive.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EffectOverdrive.cpp; sourceTree = "<group>"; };
+		A4F0D6331CE825AD00EC622B /* EffectOverdrive.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EffectOverdrive.hpp; sourceTree = "<group>"; };
+		A4F0D6341CE825AD00EC622B /* EffectsLoop.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = EffectsLoop.cpp; sourceTree = "<group>"; };
+		A4F0D6351CE825AD00EC622B /* EffectsLoop.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = EffectsLoop.hpp; sourceTree = "<group>"; };
+		A4F0D6361CE825AD00EC622B /* EnvelopeGenerator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = EnvelopeGenerator.cpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/EnvelopeGenerator.cpp; sourceTree = "<group>"; };
+		A4F0D6371CE825AD00EC622B /* EnvelopeGenerator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = EnvelopeGenerator.hpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/EnvelopeGenerator.hpp; sourceTree = "<group>"; };
+		A4F0D6381CE825AD00EC622B /* Filter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Filter.cpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/Filter.cpp; sourceTree = "<group>"; };
+		A4F0D6391CE825AD00EC622B /* Filter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Filter.hpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/Filter.hpp; sourceTree = "<group>"; };
+		A4F0D63A1CE825AD00EC622B /* LFO.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = LFO.cpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/LFO.cpp; sourceTree = "<group>"; };
+		A4F0D63B1CE825AD00EC622B /* LFO.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = LFO.hpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/LFO.hpp; sourceTree = "<group>"; };
+		A4F0D63C1CE825AD00EC622B /* Notes.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Notes.hpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/Notes.hpp; sourceTree = "<group>"; };
+		A4F0D63D1CE825AD00EC622B /* Oscillator.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Oscillator.cpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/Oscillator.cpp; sourceTree = "<group>"; };
+		A4F0D63E1CE825AD00EC622B /* Oscillator.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Oscillator.hpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/Oscillator.hpp; sourceTree = "<group>"; };
+		A4F0D63F1CE825AD00EC622B /* Parameter.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Parameter.cpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/Parameter.cpp; sourceTree = "<group>"; };
+		A4F0D6401CE825AD00EC622B /* Parameter.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Parameter.hpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/Parameter.hpp; sourceTree = "<group>"; };
+		A4F0D6411CE825AD00EC622B /* Synth.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Synth.cpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/Synth.cpp; sourceTree = "<group>"; };
+		A4F0D6421CE825AD00EC622B /* Synth.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Synth.hpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/Synth.hpp; sourceTree = "<group>"; };
+		A4F0D6431CE825AD00EC622B /* Util.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = Util.hpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/Util.hpp; sourceTree = "<group>"; };
+		A4F0D6441CE825AD00EC622B /* VolumeModule.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = VolumeModule.cpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/VolumeModule.cpp; sourceTree = "<group>"; };
+		A4F0D6451CE825AD00EC622B /* VolumeModule.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; name = VolumeModule.hpp; path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/VolumeModule.hpp; sourceTree = "<group>"; };
+		A4F0D6471CE825AD00EC622B /* WaveTable.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = WaveTable.cpp; sourceTree = "<group>"; };
+		A4F0D6481CE825AD00EC622B /* WaveTable.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = WaveTable.hpp; sourceTree = "<group>"; };
 		A5278764983A13CB84A3C6DA /* juce_ImageEffectFilter.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = juce_ImageEffectFilter.h; path = ../../../../JUCE/modules/juce_graphics/effects/juce_ImageEffectFilter.h; sourceTree = SOURCE_ROOT; };
 		A5676997E709A3A377411504 /* juce_mac_CoreAudio.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = juce_mac_CoreAudio.cpp; path = ../../../../JUCE/modules/juce_audio_devices/native/juce_mac_CoreAudio.cpp; sourceTree = SOURCE_ROOT; };
 		A5696DD720139FA6354592F6 /* juce_events.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = juce_events.cpp; path = ../../../../JUCE/modules/juce_events/juce_events.cpp; sourceTree = SOURCE_ROOT; };
@@ -2794,54 +2792,27 @@
 		A4458B331CE51ED20000690B /* Wavetable Synth */ = {
 			isa = PBXGroup;
 			children = (
-				A4458B341CE51EE10000690B /* Constants.hpp */,
-				A4458B351CE51EE10000690B /* Effects */,
-				A4458B401CE51EE10000690B /* EnvelopeGenerator.cpp */,
-				A4458B411CE51EE10000690B /* EnvelopeGenerator.hpp */,
-				A4458B421CE51EE10000690B /* Filter.cpp */,
-				A4458B431CE51EE10000690B /* Filter.hpp */,
-				A4458B441CE51EE10000690B /* LFO.cpp */,
-				A4458B451CE51EE10000690B /* LFO.hpp */,
-				A4458B481CE51EE10000690B /* Notes.hpp */,
-				A4458B491CE51EE10000690B /* Oscillator.cpp */,
-				A4458B4A1CE51EE10000690B /* Oscillator.hpp */,
-				A4458B4B1CE51EE10000690B /* Parameter.cpp */,
-				A4458B4C1CE51EE10000690B /* Parameter.hpp */,
-				A4458B4D1CE51EE10000690B /* README.md */,
-				A4458B4E1CE51EE10000690B /* Synth.cpp */,
-				A4458B4F1CE51EE10000690B /* Synth.hpp */,
-				A4458B501CE51EE10000690B /* Util.hpp */,
-				A4458B511CE51EE10000690B /* VolumeModule.cpp */,
-				A4458B521CE51EE10000690B /* VolumeModule.hpp */,
-				A4458B531CE51EE10000690B /* WaveTables */,
+				A4F0D62A1CE825AD00EC622B /* Constants.hpp */,
+				A4F0D62B1CE825AD00EC622B /* Effects */,
+				A4F0D6361CE825AD00EC622B /* EnvelopeGenerator.cpp */,
+				A4F0D6371CE825AD00EC622B /* EnvelopeGenerator.hpp */,
+				A4F0D6381CE825AD00EC622B /* Filter.cpp */,
+				A4F0D6391CE825AD00EC622B /* Filter.hpp */,
+				A4F0D63A1CE825AD00EC622B /* LFO.cpp */,
+				A4F0D63B1CE825AD00EC622B /* LFO.hpp */,
+				A4F0D63C1CE825AD00EC622B /* Notes.hpp */,
+				A4F0D63D1CE825AD00EC622B /* Oscillator.cpp */,
+				A4F0D63E1CE825AD00EC622B /* Oscillator.hpp */,
+				A4F0D63F1CE825AD00EC622B /* Parameter.cpp */,
+				A4F0D6401CE825AD00EC622B /* Parameter.hpp */,
+				A4F0D6411CE825AD00EC622B /* Synth.cpp */,
+				A4F0D6421CE825AD00EC622B /* Synth.hpp */,
+				A4F0D6431CE825AD00EC622B /* Util.hpp */,
+				A4F0D6441CE825AD00EC622B /* VolumeModule.cpp */,
+				A4F0D6451CE825AD00EC622B /* VolumeModule.hpp */,
+				A4F0D6461CE825AD00EC622B /* WaveTables */,
 			);
 			name = "Wavetable Synth";
-			sourceTree = "<group>";
-		};
-		A4458B351CE51EE10000690B /* Effects */ = {
-			isa = PBXGroup;
-			children = (
-				A4458B361CE51EE10000690B /* Effect.cpp */,
-				A4458B371CE51EE10000690B /* Effect.hpp */,
-				A4458B381CE51EE10000690B /* EffectBitcrusher.cpp */,
-				A4458B391CE51EE10000690B /* EffectBitcrusher.hpp */,
-				A4458B3A1CE51EE10000690B /* EffectDelay.cpp */,
-				A4458B3B1CE51EE10000690B /* EffectDelay.hpp */,
-				A4458B3C1CE51EE10000690B /* EffectOverdrive.cpp */,
-				A4458B3D1CE51EE10000690B /* EffectOverdrive.hpp */,
-				A4458B3E1CE51EE10000690B /* EffectsLoop.cpp */,
-				A4458B3F1CE51EE10000690B /* EffectsLoop.hpp */,
-			);
-			path = Effects;
-			sourceTree = "<group>";
-		};
-		A4458B531CE51EE10000690B /* WaveTables */ = {
-			isa = PBXGroup;
-			children = (
-				A4458B541CE51EE10000690B /* WaveTable.cpp */,
-				A4458B551CE51EE10000690B /* WaveTable.hpp */,
-			);
-			path = WaveTables;
 			sourceTree = "<group>";
 		};
 		A45936CE3EE5DF85C1E121E4 /* components */ = {
@@ -2858,6 +2829,34 @@
 				15A5A7E59C2D124AD5C0E5E4 /* juce_ModalComponentManager.h */,
 			);
 			name = components;
+			sourceTree = "<group>";
+		};
+		A4F0D62B1CE825AD00EC622B /* Effects */ = {
+			isa = PBXGroup;
+			children = (
+				A4F0D62C1CE825AD00EC622B /* Effect.cpp */,
+				A4F0D62D1CE825AD00EC622B /* Effect.hpp */,
+				A4F0D62E1CE825AD00EC622B /* EffectBitcrusher.cpp */,
+				A4F0D62F1CE825AD00EC622B /* EffectBitcrusher.hpp */,
+				A4F0D6301CE825AD00EC622B /* EffectDelay.cpp */,
+				A4F0D6311CE825AD00EC622B /* EffectDelay.hpp */,
+				A4F0D6321CE825AD00EC622B /* EffectOverdrive.cpp */,
+				A4F0D6331CE825AD00EC622B /* EffectOverdrive.hpp */,
+				A4F0D6341CE825AD00EC622B /* EffectsLoop.cpp */,
+				A4F0D6351CE825AD00EC622B /* EffectsLoop.hpp */,
+			);
+			name = Effects;
+			path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/Effects;
+			sourceTree = "<group>";
+		};
+		A4F0D6461CE825AD00EC622B /* WaveTables */ = {
+			isa = PBXGroup;
+			children = (
+				A4F0D6471CE825AD00EC622B /* WaveTable.cpp */,
+				A4F0D6481CE825AD00EC622B /* WaveTable.hpp */,
+			);
+			name = WaveTables;
+			path = ../../../../../../Documents/DigitalAudio/WaveTableSynth/WaveTables;
 			sourceTree = "<group>";
 		};
 		A6B1658594200A15691ADC83 /* floor */ = {
@@ -3901,21 +3900,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A4458B5D1CE51EE10000690B /* LFO.cpp in Sources */,
-				A4458B5A1CE51EE10000690B /* EffectsLoop.cpp in Sources */,
-				A4458B5C1CE51EE10000690B /* Filter.cpp in Sources */,
-				A4458B581CE51EE10000690B /* EffectDelay.cpp in Sources */,
-				A4458B591CE51EE10000690B /* EffectOverdrive.cpp in Sources */,
-				A4458B561CE51EE10000690B /* Effect.cpp in Sources */,
-				A4458B571CE51EE10000690B /* EffectBitcrusher.cpp in Sources */,
-				A4458B651CE51EE10000690B /* WaveTable.cpp in Sources */,
-				A4458B5B1CE51EE10000690B /* EnvelopeGenerator.cpp in Sources */,
-				A4458B621CE51EE10000690B /* README.md in Sources */,
-				A4458B631CE51EE10000690B /* Synth.cpp in Sources */,
-				A4458B611CE51EE10000690B /* Parameter.cpp in Sources */,
+				A4F0D6501CE825AD00EC622B /* LFO.cpp in Sources */,
+				A4F0D6511CE825AD00EC622B /* Oscillator.cpp in Sources */,
+				A4F0D64D1CE825AD00EC622B /* EffectsLoop.cpp in Sources */,
+				A4F0D64F1CE825AD00EC622B /* Filter.cpp in Sources */,
+				A4F0D64B1CE825AD00EC622B /* EffectDelay.cpp in Sources */,
+				A4F0D64C1CE825AD00EC622B /* EffectOverdrive.cpp in Sources */,
+				A4F0D6491CE825AD00EC622B /* Effect.cpp in Sources */,
+				A4F0D64A1CE825AD00EC622B /* EffectBitcrusher.cpp in Sources */,
+				A4F0D6531CE825AD00EC622B /* Synth.cpp in Sources */,
+				A4F0D6541CE825AD00EC622B /* VolumeModule.cpp in Sources */,
+				A4F0D64E1CE825AD00EC622B /* EnvelopeGenerator.cpp in Sources */,
 				BA17C4D3641B2EA529D07A30 /* juce_audio_plugin_client_VST2.cpp in Sources */,
-				A4458B601CE51EE10000690B /* Oscillator.cpp in Sources */,
-				A4458B641CE51EE10000690B /* VolumeModule.cpp in Sources */,
+				A4F0D6521CE825AD00EC622B /* Parameter.cpp in Sources */,
+				A4F0D6551CE825AD00EC622B /* WaveTable.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
