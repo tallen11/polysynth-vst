@@ -58,6 +58,11 @@ SoftSynthAudioProcessorEditor::SoftSynthAudioProcessorEditor (SoftSynthAudioProc
     
     initSlider(&filterLFOFrequencySlider, 0.0, 20.0, " Filter LFO F", 0.0);
     initSlider(&filterLFOAmplitudeSlider, 0.0, 1.0, " Filter LFO A", 0.0);
+    
+    initSlider(&attackSlider, 0.0, 2.0, " Attack Duration", 0.01);
+    initSlider(&decaySlider, 0.0, 2.0, " Decay Duration", 0.01);
+    initSlider(&sustainSlider, 0.0, 1.0, " Sustain Level", 1.0);
+    initSlider(&releaseSlider, 0.0, 2.0, " Release Duration", 0.01);
 }
 
 SoftSynthAudioProcessorEditor::~SoftSynthAudioProcessorEditor()
@@ -69,9 +74,9 @@ void SoftSynthAudioProcessorEditor::paint (Graphics& g)
 {
     g.fillAll (Colours::white);
 
-    g.setColour (Colours::black);
-    g.setFont (15.0f);
-    g.drawFittedText ("Soft Synth", 0, 0, getWidth(), 30, Justification::centred, 1);
+//    g.setColour (Colours::black);
+//    g.setFont (15.0f);
+//    g.drawFittedText ("Soft Synth", 0, 0, getWidth(), 30, Justification::centred, 1);
 }
 
 void SoftSynthAudioProcessorEditor::resized()
@@ -82,6 +87,10 @@ void SoftSynthAudioProcessorEditor::resized()
     volumeLFOAmplitudeSlider.setBounds(70, 10, 20, getHeight() - 60);
     filterLFOFrequencySlider.setBounds(90, 10, 20, getHeight() - 60);
     filterLFOAmplitudeSlider.setBounds(110, 10, 20, getHeight() - 60);
+    attackSlider.setBounds(130, 10, 20, getHeight() - 60);
+    decaySlider.setBounds(150, 10, 20, getHeight() - 60);
+    sustainSlider.setBounds(170, 10, 20, getHeight() - 60);
+    releaseSlider.setBounds(190, 10, 20, getHeight() - 60);
 }
 
 void SoftSynthAudioProcessorEditor::sliderValueChanged(Slider *slider)
@@ -98,6 +107,14 @@ void SoftSynthAudioProcessorEditor::sliderValueChanged(Slider *slider)
         processor.synth.setFilterLFOFrequency(filterLFOFrequencySlider.getValue());
     } else if (slider == &filterLFOAmplitudeSlider) {
         processor.synth.setFilterLFOAmplitude(filterLFOAmplitudeSlider.getValue());
+    } else if (slider == &attackSlider) {
+        processor.synth.setNoteAttackDuration(attackSlider.getValue());
+    } else if (slider == &decaySlider) {
+        processor.synth.setNoteDecayDuration(decaySlider.getValue());
+    } else if (slider == &sustainSlider) {
+        processor.synth.setNoteSustainLevel(sustainSlider.getValue());
+    } else if (slider == &releaseSlider) {
+        processor.synth.setNoteReleaseDuration(releaseSlider.getValue());
     }
 }
 

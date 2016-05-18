@@ -45,6 +45,11 @@ private:
     Slider volumeLFOAmplitudeSlider;
     Slider filterLFOFrequencySlider;
     Slider filterLFOAmplitudeSlider;
+    
+    Slider attackSlider;
+    Slider decaySlider;
+    Slider sustainSlider;
+    Slider releaseSlider;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SoftSynthAudioProcessorEditor)
 };
