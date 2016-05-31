@@ -20,49 +20,21 @@ SoftSynthAudioProcessorEditor::SoftSynthAudioProcessorEditor (SoftSynthAudioProc
     // editor's size to whatever you need it to be.
     setSize (400, 300);
     
-    filterCutoffSlider.setSliderStyle(Slider::LinearVertical);
-    filterCutoffSlider.setRange(0.0, 1.0);
-    filterCutoffSlider.setTextBoxStyle(Slider::NoTextBox, false, 90, 0);
-    filterCutoffSlider.setPopupDisplayEnabled(true, this);
-    filterCutoffSlider.setTextValueSuffix(" Filter Cutoff");
-    filterCutoffSlider.setValue(1.0);
-    addAndMakeVisible(&filterCutoffSlider);
-    filterCutoffSlider.addListener(this);
+    initSlider(&filterCutoffSlider, 0.0, 1.0, " %", 1.0, "Cutoff");
+    initSlider(&filterResonanceSlider, 0.0, 1.0, " %", 0.0, "Resonance");
     
-    filterResonanceSlider.setSliderStyle(Slider::LinearVertical);
-    filterResonanceSlider.setRange(0.0, 1.0);
-    filterResonanceSlider.setTextBoxStyle(Slider::NoTextBox, false, 90, 0);
-    filterResonanceSlider.setPopupDisplayEnabled(true, this);
-    filterResonanceSlider.setTextValueSuffix(" Filter Resonance");
-    filterResonanceSlider.setValue(0.0);
-    addAndMakeVisible(&filterResonanceSlider);
-    filterResonanceSlider.addListener(this);
+    initSlider(&volumeLFOFrequencySlider, 0.0, 20.0, " Hz", 0.0, "VLFO Frequency");
+    initSlider(&volumeLFOAmplitudeSlider, 0.0, 1.0, " %", 0.0, "VLFO Amplitude");
     
-    volumeLFOFrequencySlider.setSliderStyle(Slider::LinearVertical);
-    volumeLFOFrequencySlider.setRange(0.0, 20.0);
-    volumeLFOFrequencySlider.setTextBoxStyle(Slider::NoTextBox, false, 90, 0);
-    volumeLFOFrequencySlider.setPopupDisplayEnabled(true, this);
-    volumeLFOFrequencySlider.setTextValueSuffix(" Volume LFO F");
-    volumeLFOFrequencySlider.setValue(0.0);
-    addAndMakeVisible(&volumeLFOFrequencySlider);
-    volumeLFOFrequencySlider.addListener(this);
+    initSlider(&filterLFOFrequencySlider, 0.0, 20.0, " Hz", 0.0, "FLFO Frequency");
+    initSlider(&filterLFOAmplitudeSlider, 0.0, 1.0, " %", 0.0, "FLFO Amplitude");
     
-    volumeLFOAmplitudeSlider.setSliderStyle(Slider::LinearVertical);
-    volumeLFOAmplitudeSlider.setRange(0.0, 1.0);
-    volumeLFOAmplitudeSlider.setTextBoxStyle(Slider::NoTextBox, false, 90, 0);
-    volumeLFOAmplitudeSlider.setPopupDisplayEnabled(true, this);
-    volumeLFOAmplitudeSlider.setTextValueSuffix(" Volume LFO A");
-    volumeLFOAmplitudeSlider.setValue(0.0);
-    addAndMakeVisible(&volumeLFOAmplitudeSlider);
-    volumeLFOAmplitudeSlider.addListener(this);
+    initSlider(&attackSlider, 0.0, 2.0, " seconds", 0.01, "Attack");
+    initSlider(&decaySlider, 0.0, 2.0, " seconds", 0.01, "Decay");
+    initSlider(&sustainSlider, 0.0, 1.0, " %", 1.0, "Sustain Level");
+    initSlider(&releaseSlider, 0.0, 2.0, " seconds", 0.01, "Release");
     
-    initSlider(&filterLFOFrequencySlider, 0.0, 20.0, " Filter LFO F", 0.0);
-    initSlider(&filterLFOAmplitudeSlider, 0.0, 1.0, " Filter LFO A", 0.0);
-    
-    initSlider(&attackSlider, 0.0, 2.0, " Attack Duration", 0.01);
-    initSlider(&decaySlider, 0.0, 2.0, " Decay Duration", 0.01);
-    initSlider(&sustainSlider, 0.0, 1.0, " Sustain Level", 1.0);
-    initSlider(&releaseSlider, 0.0, 2.0, " Release Duration", 0.01);
+    resized();
 }
 
 SoftSynthAudioProcessorEditor::~SoftSynthAudioProcessorEditor()
@@ -81,16 +53,28 @@ void SoftSynthAudioProcessorEditor::paint (Graphics& g)
 
 void SoftSynthAudioProcessorEditor::resized()
 {
-    filterCutoffSlider.setBounds(10, 10, 20, getHeight() - 60);
-    filterResonanceSlider.setBounds(30, 10, 20, getHeight() - 60);
-    volumeLFOFrequencySlider.setBounds(50, 10, 20, getHeight() - 60);
-    volumeLFOAmplitudeSlider.setBounds(70, 10, 20, getHeight() - 60);
-    filterLFOFrequencySlider.setBounds(90, 10, 20, getHeight() - 60);
-    filterLFOAmplitudeSlider.setBounds(110, 10, 20, getHeight() - 60);
-    attackSlider.setBounds(130, 10, 20, getHeight() - 60);
-    decaySlider.setBounds(150, 10, 20, getHeight() - 60);
-    sustainSlider.setBounds(170, 10, 20, getHeight() - 60);
-    releaseSlider.setBounds(190, 10, 20, getHeight() - 60);
+    int lastSliderEnd = 10;
+    int height = 30;
+    for (auto slider : sliders) {
+        slider->setBounds(lastSliderEnd, height, 60, 60);
+        lastSliderEnd += slider->getWidth() + 10;
+        
+        if (slider->getWidth() + lastSliderEnd > getWidth()) {
+            height += slider->getHeight() + 20;
+            lastSliderEnd = 10;
+        }
+    }
+    
+//    filterCutoffSlider.setBounds(10, 10, 20, getHeight() - 60);
+//    filterResonanceSlider.setBounds(30, 10, 20, getHeight() - 60);
+//    volumeLFOFrequencySlider.setBounds(50, 10, 20, getHeight() - 60);
+//    volumeLFOAmplitudeSlider.setBounds(70, 10, 20, getHeight() - 60);
+//    filterLFOFrequencySlider.setBounds(90, 10, 20, getHeight() - 60);
+//    filterLFOAmplitudeSlider.setBounds(110, 10, 20, getHeight() - 60);
+//    attackSlider.setBounds(130, 10, 20, getHeight() - 60);
+//    decaySlider.setBounds(150, 10, 20, getHeight() - 60);
+//    sustainSlider.setBounds(170, 10, 20, getHeight() - 60);
+//    releaseSlider.setBounds(190, 10, 20, getHeight() - 60);
 }
 
 void SoftSynthAudioProcessorEditor::sliderValueChanged(Slider *slider)
@@ -118,9 +102,9 @@ void SoftSynthAudioProcessorEditor::sliderValueChanged(Slider *slider)
     }
 }
 
-void SoftSynthAudioProcessorEditor::initSlider(Slider *slider, double min, double max, const std::string &suffix, double val)
+void SoftSynthAudioProcessorEditor::initSlider(Slider *slider, double min, double max, const std::string &suffix, double val, const std::string &labelText)
 {
-    slider->setSliderStyle(Slider::LinearVertical);
+    slider->setSliderStyle(Slider::Rotary);
     slider->setRange(min, max);
     slider->setTextBoxStyle(Slider::NoTextBox, false, 90, 0);
     slider->setPopupDisplayEnabled(true, this);
@@ -128,5 +112,16 @@ void SoftSynthAudioProcessorEditor::initSlider(Slider *slider, double min, doubl
     slider->setValue(val);
     addAndMakeVisible(slider);
     slider->addListener(this);
+    
+    Label *label = new Label;
+    addAndMakeVisible(label);
+    Font font;
+    font.setTypefaceName("Avenir Next");
+    font.setHorizontalScale(0.75);
+    label->setFont(font);
+    label->setText(labelText, dontSendNotification);
+    label->attachToComponent(slider, false);
+    
+    sliders.push_back(slider);
 }
 

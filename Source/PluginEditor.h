@@ -13,6 +13,7 @@
 
 #include "../JuceLibraryCode/JuceHeader.h"
 #include "PluginProcessor.h"
+#include <vector>
 
 
 //==============================================================================
@@ -33,7 +34,7 @@ private:
     // access the processor object that created it.
     
     void sliderValueChanged(Slider *slider) override;
-    void initSlider(Slider *slider, double min, double max, const std::string &suffix, double val);
+    void initSlider(Slider *slider, double min, double max, const std::string &suffix, double val, const std::string &labelText);
     
     SoftSynthAudioProcessor& processor;
     
@@ -50,6 +51,8 @@ private:
     Slider decaySlider;
     Slider sustainSlider;
     Slider releaseSlider;
+    
+    std::vector<Component*> sliders;
 
     JUCE_DECLARE_NON_COPYABLE_WITH_LEAK_DETECTOR (SoftSynthAudioProcessorEditor)
 };
