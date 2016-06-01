@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "671A9224A96AA6A56B43652AC80B6DF2A578CD18",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "2E574810C4CED61401884A528F842E20B91B066A" : 0,
+    "671A9224A96AA6A56B43652AC80B6DF2A578CD18" : 0
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "085962CF-F2FD-4CB7-804C-5CC7E8845E69",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "2E574810C4CED61401884A528F842E20B91B066A" : "..\/..\/..\/Documents\/DigitalAudio\/WaveTableSynth",
+    "671A9224A96AA6A56B43652AC80B6DF2A578CD18" : "SoftSynth\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "SoftSynth",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "Builds\/MacOSX\/SoftSynth.xcodeproj",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tallen11\/polysynth.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "2E574810C4CED61401884A528F842E20B91B066A"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/tallen11\/polysynth-vst.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "671A9224A96AA6A56B43652AC80B6DF2A578CD18"
+    }
+  ]
+}
