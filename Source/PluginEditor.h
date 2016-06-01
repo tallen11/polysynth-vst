@@ -39,10 +39,13 @@ private:
     void comboBoxChanged(ComboBox *box) override;
     void initSlider(Slider *slider, double min, double max, const std::string &suffix, double val, const std::string &labelText);
     void initWaveformSelector(ComboBox *box, const std::string &labelText);
+    void initVoiceCountSelector(ComboBox *box, const std::string &labelText);
+    void initFilterTypeSelector(ComboBox *box, const std::string &labelText);
     
     SoftSynthAudioProcessor& processor;
     
     /* Synth Sliders */
+    ComboBox filterType;
     Slider filterCutoffSlider;
     Slider filterResonanceSlider;
     
@@ -65,6 +68,9 @@ private:
     ComboBox oscillator1Waveform2;
     ComboBox oscillator2Waveform1;
     ComboBox oscillator2Waveform2;
+    
+    ComboBox oscillator1VoiceCount;
+    ComboBox oscillator2VoiceCount;
     
     ToggleButton oscillator2Toggle;
 

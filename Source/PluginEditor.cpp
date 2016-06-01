@@ -18,10 +18,11 @@ SoftSynthAudioProcessorEditor::SoftSynthAudioProcessorEditor (SoftSynthAudioProc
 {
     // Make sure that before the constructor has finished, you've set the
     // editor's size to whatever you need it to be.
-    setSize (400, 400);
+    setSize (370, 350);
     
     initSlider(&filterCutoffSlider, 0.0, 1.0, " %", 1.0, "Cutoff");
     initSlider(&filterResonanceSlider, 0.0, 1.0, " %", 0.0, "Resonance");
+    initFilterTypeSelector(&filterType, "Filter Type");
     
     initSlider(&volumeLFOFrequencySlider, 0.0, 20.0, " Hz", 0.0, "VLFO Frequency");
     initSlider(&volumeLFOAmplitudeSlider, 0.0, 1.0, " %", 0.0, "VLFO Amplitude");
@@ -36,6 +37,7 @@ SoftSynthAudioProcessorEditor::SoftSynthAudioProcessorEditor (SoftSynthAudioProc
     
     initWaveformSelector(&oscillator1Waveform1, "Osc 1 Waveform 1");
     initWaveformSelector(&oscillator1Waveform2, "Osc 1 Waveform 2");
+    initVoiceCountSelector(&oscillator1VoiceCount, "Osc 1 Voices");
     initSlider(&oscillator1TableFadeSlider, 0.0, 1.0, " %", 0.0, "Osc 1 Table");
     
     oscillator2Toggle.setButtonText("Osc 2");
@@ -45,6 +47,7 @@ SoftSynthAudioProcessorEditor::SoftSynthAudioProcessorEditor (SoftSynthAudioProc
     
     initWaveformSelector(&oscillator2Waveform1, "Osc 2 Waveform 1");
     initWaveformSelector(&oscillator2Waveform2, "Osc 2 Waveform 2");
+    initVoiceCountSelector(&oscillator2VoiceCount, "Osc 2 Voices");
     initSlider(&oscillator2TableFadeSlider, 0.0, 1.0, " %", 0.0, "Osc 2 Table");
     
     resized();
@@ -140,6 +143,12 @@ void SoftSynthAudioProcessorEditor::comboBoxChanged(ComboBox *box)
         processor.synth.setOscillatorWavetable(1, 0, box->getSelectedId());
     } else if (box == &oscillator2Waveform2) {
         processor.synth.setOscillatorWavetable(1, 1, box->getSelectedId());
+    } else if (box == &oscillator1VoiceCount) {
+        processor.synth.setOscillatorVoiceCount(0, box->getSelectedId());
+    } else if (box == &oscillator2VoiceCount) {
+        processor.synth.setOscillatorVoiceCount(1, box->getSelectedId());
+    } else if (box == &filterType) {
+        processor.synth.setFilterType(static_cast<FilterType>(box->getSelectedId()));
     }
 }
 
@@ -172,6 +181,7 @@ void SoftSynthAudioProcessorEditor::initWaveformSelector(ComboBox *box, const st
     box->addItem("Square", 2);
     box->addItem("Sine", 3);
     box->addListener(this);
+    box->setSelectedId(1);
     addAndMakeVisible(box);
     Label *label = new Label;
     addAndMakeVisible(label);
@@ -184,3 +194,43 @@ void SoftSynthAudioProcessorEditor::initWaveformSelector(ComboBox *box, const st
     sliders.push_back(box);
 }
 
+void SoftSynthAudioProcessorEditor::initVoiceCountSelector(juce::ComboBox *box, const std::string &labelText)
+{
+    box->addItem("1", 1);
+    box->addItem("2", 2);
+    box->addItem("3", 3);
+    box->addItem("4", 4);
+    box->setSelectedId(1);
+    box->addListener(this);
+    addAndMakeVisible(box);
+    
+    Label *label = new Label;
+    addAndMakeVisible(label);
+    Font font;
+    font.setTypefaceName("Avenir Next");
+    font.setHorizontalScale(0.75);
+    label->setFont(font);
+    label->setText(labelText, dontSendNotification);
+    label->attachToComponent(box, false);
+    sliders.push_back(box);
+}
+
+void SoftSynthAudioProcessorEditor::initFilterTypeSelector(juce::ComboBox *box, const std::string &labelText)
+{
+    box->addItem("Low Pass", 1);
+    box->addItem("High Pass", 2);
+    box->addItem("Band Pass", 3);
+    box->setSelectedId(1);
+    box->addListener(this);
+    addAndMakeVisible(box);
+    
+    Label *label = new Label;
+    addAndMakeVisible(label);
+    Font font;
+    font.setTypefaceName("Avenir Next");
+    font.setHorizontalScale(0.75);
+    label->setFont(font);
+    label->setText(labelText, dontSendNotification);
+    label->attachToComponent(box, false);
+    sliders.push_back(box);
+}
